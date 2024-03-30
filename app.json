@@ -4,10 +4,10 @@
     "slug": "player",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.jpg",
+    "icon": "./assets/images/icon.jpg",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash.jpg",
+      "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,9 +18,11 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.jpg",
+        "foregroundImage": "./assets/images/icon.jpg",
         "backgroundColor": "#ffffff"
       }
-    }
+    },
+    "plugins": ["expo-font", "expo-router"],
+    "scheme": "sportplayer"
   }
 }
