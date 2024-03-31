@@ -5,6 +5,7 @@ import * as SplashScreen from "expo-splash-screen"
 import { store } from "./src/redux/store"
 import { Provider } from "react-redux"
 import EntryPoint from "./src/navigators/EntryPoint/EntryPoint"
+import AppText from "./src/components/AppText/AppText"
 
 SplashScreen.preventAutoHideAsync()
 
@@ -32,7 +33,8 @@ export default function App() {
 
   return (
     <Provider store={store}>
-      <EntryPoint onLayout={onLayoutRootView} />
+      {/* <EntryPoint onLayout={onLayoutRootView} /> */}
+      <AppText>Hello World</AppText>
     </Provider>
   )
 }

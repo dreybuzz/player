@@ -6,6 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.jpg",
     "userInterfaceStyle": "dark",
+    "experiments": {
+      "typedRoutes": true
+    },
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",

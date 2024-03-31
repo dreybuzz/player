@@ -6,6 +6,8 @@ type AppTextProps = TextProps & {
   weight?: 300 | 400 | 500 | 700
   italics?: boolean
   text?: string | number
+  size?: number
+  color?: string
 }
 
 export default function AppText({
@@ -13,6 +15,8 @@ export default function AppText({
   style,
   text,
   weight,
+  size,
+  color,
 }: AppTextProps) {
   const fontFamily = getFont(weight)
 
@@ -24,7 +28,8 @@ export default function AppText({
         styles.text,
         {
           fontFamily,
-          color: themeColors.text,
+          color: color ?? themeColors.text,
+          fontSize: size,
         },
         style,
       ]}>
